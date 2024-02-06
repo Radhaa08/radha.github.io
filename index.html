@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Rungta</title>
+    <link rel="stylesheet" href="what.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+  <script src="what.js"></script>
+  <section class="page" id = "i1">
+
+    <style>
+      body{
+        background-size: cover;
+      }
+
+        .toggle-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .toggle-button i {
+            font-size: 20px;
+            color: #090808; /* Icon color in light mode */
+        }
+
+        .dark-mode .toggle-button i {
+            color: #f6efef; /* Icon color in dark mode */
+        }
+        .color-change {
+        transition: color 0.5s ease; /* Add a transition for the color change */
+    }
+
+    /* Dark mode text color */
+   
+      
+    </style>
+    <button id="toggleMode" class="toggle-button" data-aos="fade-up">
+      <i class="fas fa-adjust"></i> <!-- Light/Dark mode icon -->
+  </button>
+    <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Achievement">Achievements</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+            <li><a href="#Socials">Socials</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="paa">
+        <a id="Home"></a>
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1 data-aos="fade-up" data-aos-duration="1500"><span class="welcome-text" data-text="WELCOME"></span></h1>
+        <br>
+      </div>
+      <div class="abode-line" id="typing-text"></div>
+        
+      <script>
+        const text = document.getElementById('typing-text');
+        const originalText = "Welcome to my online abode! I hope you enjoy your stay, but please don't touch anything - I'm still working on the 'don't break anything' spell.";
+        text.innerHTML = '';
+      
+        let index = 0;
+        function type() {
+          text.innerHTML += originalText[index];
+          index++;
+          if (index < originalText.length) {
+            setTimeout(type, 100); // Adjust typing speed (100 milliseconds in this case)
+          }
+        }
+      
+        type(); // Start typing animation when the page loads
+      </script>
+      
+  </section>
+  
+<div class="Profile">
+    <a id="Profile"></a>
+    <br><br><br><br><br><br><br><br><br><br>
+    <h1 data-aos="fade-up" data-aos-duration="1500">About Me</h1>
+    <div class="pr">
+      <div class="ha" data-aos="fade-up" data-aos-duration="1500">
+        <img src="https://media.licdn.com/dms/image/D5603AQGjl_ayAA3Z5Q/profile-displayphoto-shrink_800_800/0/1703958491912?e=2147483647&v=beta&t=n8ufdrlGL80tHPMHP8FQQRdI3URloGIedulkbmXUibo" alt="Your Profile Image" class="profile-image">
+      </div>
+      <div class="ha text">
+        <h2 data-aos="fade-up" data-aos-duration="1500" style="font-size: 35px;">HEY THERE!</h2>
+        <p data-aos="fade-up" data-aos-duration="1500" style="font-size: 20px;"> I'm Radha Rungta, a spirited Freshman Comp Sci undergrad. Beyond coding and dancing, you'll find me exploring new places, trying diverse experiences, and embracing every opportunity to learn. With a warm and approachable nature, I'm not just navigating algorithms but also the world, creating a tapestry of adventures that blend tech, creativity, and the joy of discovery.</p>
+      </div>
+    </div>
+</div>
+ 
+ 
+
+  <div class="Education">
+    <a id="Education"></a>
+    <br><br><br><br>
+    <h1 class="heading-text" data-aos="fade-up" data-aos-duration="1500">Education</h1>
+    <br>
+   
+      <div class="grad-image " data-aos="fade-up" data-aos-duration="1500">
+        <img src="https://t4.ftcdn.net/jpg/01/15/63/71/360_F_115637158_fh83b4nFV3NUrqIbzXYhIRFmxhxaJlco.jpg" width=577 height=267>
+        
+      </div>
+   <br><br>
+  <div class="education-content" data-aos="fade-up" data-aos-duration="1500">
+    
+      <div class="experience-content1" data-aos="fade-up" data-aos-duration="1500">
+        <h2>H.P. Childeren's Academy </h2>
+        <h3>2009-2021</h3>
+        <p>High School</p>
+        </div>
+        <div class="experience-content2" data-aos="fade-up" data-aos-duration="1500">
+        <h2>International Institute of Information Technology-Hyderbad</h2>
+        <h3>2023-2027</h3>
+        <p>Bachelor in Computer Science Engineering</p>
+      </div>
+      
+  </div>
+  </div>
+  <div class="Achievements">
+    <a id="Achievement"></a>
+    <br><br><br><br>
+    <h1 data-aos="fade-up" data-aos-duration="1500" >Achievements </h1>
+    <br><br><br><br>
+    <p class = "lists" data-aos="fade-up" data-aos-duration="1500">
+      Honorable mentions in multiple SOF olympiads.<br>
+      Got several medals from NSTSE.<br>
+      Secured 99.91% percentile in JEE.<br>
+    </p>
+  </div>
+  <div class="Skills">
+    <a id="Skills"></a>
+    <br><br><br><br>
+    <div class="container">
+      <h1 class="heading-text" data-aos="fade-up" data-aos-duration="1500">My Skills</h1>
+        <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <b>HTML/CSS</b>
+          <span>85%</span>
+          <div>
+            <span style="width:85%"></span>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <b>Python</b>
+          <span>60%</span>
+          <div>
+            <span style="width:60%"></span>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <b>JavaScript</b>
+          <span>65%</span>
+          <div>
+            <span style="width:65%"></span>
+          </div>
+        </div>
+        <div class="skill" data-aos="fade-up" data-aos-duration="1500">
+          <b>C</b>
+          <span>90%</span>
+          <div>
+            <span style="width:90%"></span>
+          </div>
+        </div>
+  </div>
+  </div>
+  <div class="Blogs" data-aos="fade-up" data-aos-duration="1500">
+    <a id="Blogs"></a>
+    <br><br><br>
+    <h1 class="heading-text" data-aos="fade-up" data-aos-duration="1500" style="color: white">Dive into my Blog posts.</h1>
+    <a href="aa.html" target="_blank" style="color: rgb(243, 241, 241); font-size: 25px";>Read More</a>
+    <h2 data-aos="fade-up" data-aos-duration="1500" style="color: white">Online Piracy in India:</h2>
+    <button onclick="like('blog1')">Like</button>
+    <p id="likes1" style="color: white;">Likes: <span id="count1">0</span></p>
+    <hr >
+    <h2 data-aos="fade-up" data-aos-duration="1500" style="color: white">The Role of School:</h2>
+    <button onclick="like('blog2')">Like</button>
+    <p id="likes2" style="color: white;">Likes: <span id="count2">0</span></p>
+    <script>
+     
+      function like(blogId) {
+  
+        let currentCount = localStorage.getItem(blogId) || 0;
+        currentCount++;
+        localStorage.setItem(blogId, currentCount);
+        document.getElementById(`count${blogId.charAt(blogId.length-1)}`).textContent = currentCount;
+      }
+      document.getElementById('count1').textContent = localStorage.getItem('blog1') || 0;
+      document.getElementById('count2').textContent = localStorage.getItem('blog2') || 0;
+    </script>
+       
+
+    </div>
+  
+  <div class="Socials" data-aos="fade-up" data-aos-duration="1500">
+    <a id="Socials"></a>
+    <br><br><br>
+    <h1 class="heading-text" data-aos="fade-up" data-aos-duration="1500" style="color: white">Take a look at my resume.</h1>
+    <br>
+    <a href="resume.pdf" target="_blank" style="color:white">Download Resume</a>
+    <h1 class="heading-text" data-aos="fade-up" data-aos-duration="1500" style="color: white">Get in touch with me!</h1>
+    <br><br><br>
+    <div class="haha">
+      <a href="https://github.com/Radhaa08" target="_blank" class="social-icon" title="GitHub">
+          <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:radha.rungta@students.iiit.ac.in" class="social-icon" title="Email">
+          <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/radha-rungta-263b89285/" target="_blank" class="social-icon" title="Linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=150068643730260&mibextid=JRoKGi" target="_blank" class="social-icon" title="Linkedin">
+        <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+  </div>
+  
+  <script>
+    AOS.init();
+  </script>
+  <!-- <div class="glow" id="cursorGlow"></div>
+
+   Your page content goes here
+  <div style="height: 200vh;">
+     Add more content if needed 
+  </div>
+    <script>
+      // Function to update the position of the glow based on cursor coordinates
+      function updateGlowPosition(event) {
+        const cursorGlow = document.getElementById('cursorGlow');
+        cursorGlow.style.left = `${event.clientX}px`;
+        cursorGlow.style.top = `${event.clientY}px`;
+      }
+  
+      // Add event listener to update glow position on mousemove
+      document.addEventListener('mousemove', updateGlowPosition);
+    </script> -->
+</body>
+</html>
