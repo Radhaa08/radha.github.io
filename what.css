@@ -1,0 +1,271 @@
+
+body,
+html {
+  height: 100%;
+}
+
+
+.profilestyle{
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:white;
+}
+.page {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+nav {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+ 
+  padding: 1.5% 4% 1%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+nav img {
+  border-radius: 60%;
+  width: 40px;
+  transition: 0.5s;
+}
+nav img:hover {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: 0.5s;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  padding: 2% 4%;
+  list-style: none;
+  display: inline-block;
+  padding: 6px 10px;
+  position: sticky;
+}
+.nav-links ul li a {
+  background-color: none;
+  color: rgb(249, 247, 247);
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.nav-links ul li a:hover {
+  background-color: #f0b67c;
+  font-size: 11px;
+  color: black;
+  transition: 0.4s;
+}
+.Profile,.Achievements,.Education,.Skills {
+    max-width: 800px;
+    margin: auto;
+}
+
+.Profile h1,.Achievements h1,.Education h1,.Skills h1 {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    font-size:50px ;
+    position: relative;
+    padding: 0 20px;
+}
+.Profile h1::before,.Profile h1::after,.Achievements h1::before,.Achievements h1::after,.Education h1::before,.Education h1::after,.Skills h1::before,.Skills h1::after
+{
+    content: "";
+    position:absolute;
+    top:50%;
+    width:40%;
+    border-bottom: 2px solid #f0b67c;
+}
+.Profile h1:before,.Achievements h1::before,.Education h1::before,.Skills h1::before{
+    left: 0;
+}
+.Profile h1:after,.Achievements h1::after,.Education h1::after,.Skills h1::after{
+    right: 0;
+}
+.a1
+{
+    display:flex;
+    align-items: center;
+}
+.paa .welcome-text {
+  font-family: 'Brush Script MT', cursive;
+  color: white;
+  font-size: 100px;
+  display: block;
+  text-align: center;
+  animation: welcomeDance 2s infinite ;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes welcomeDance {
+  0%, 100% {
+    transform: rotate(0deg);
+}
+25%, 75% {
+    transform: rotate(-10deg);
+}
+50% {
+    transform: rotate(10deg);
+}
+}
+
+
+.pr{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+
+
+.ha {
+  max-width: 50%;
+  float: left;
+}
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.Education {
+	max-width: 800 px;
+  text-align: center;
+	margin: auto;
+  color: white;
+  /* display: flex; */
+  align-items: center;
+ /* justify-content: space-between;
+*/
+}
+.heading-text
+{
+  text-align: center;
+}
+.edcation-content
+{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between; 
+  flex-basis: 45%; /* Each item will take 45% width */
+  padding: 10px;
+}
+
+.experience-content1,.experience-content2 {
+  flex-basis: 45%; /* Each item will take 45% width */
+  padding: 10px;
+  /* Add some margin between items */
+}
+.experience-content1 h2,.experience-content2 h2 {
+
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+.experience-content1 h3,.experience-content2 h3 {
+	color: #f0b67c;
+	font-weight: 500;
+	margin-bottom: 2px;
+	font-size: 17px;
+  
+}
+.experience-content1 p,.experience-content2 p {
+	font-size: 20px;
+}
+
+.grad-image img {
+  display: block;
+  width: 35%;
+  margin: auto;
+}
+
+.Education:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Achievements{
+  justify-content: center;
+  text-align: center;
+}
+.skill {
+	margin-top: 30px;
+	font-size: 17px;
+  color:white;
+}
+.skill span {
+	float: right;
+}
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+.skill div span {
+	background: #f0b67c;
+	height: 5px;
+	float: left;
+}
+.Skills
+{
+  max-width: 600px;
+  margin: auto;
+ 
+}
+.Socials {
+  margin-top: 20px;
+  align-items: center;
+}
+.haha{
+  background-color: #f0b67c; /* Transparent light blue background */
+  padding: 10px; /* Add padding to the taskbar */
+  border-radius: 10px;
+}
+.social-icon {
+  margin: 150px;
+  color: #090909;
+  font-size: 40px;
+  cursor: pointer;
+}
+.lists
+{
+  color: white;
+  font-size: 30px;
+
+}
+.abode-line {
+  font-family: monospace;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden; /* Ensures that the text overflow is hidden */
+  white-space: pre-wrap; /* Allows wrapping when necessary */
+  animation: typing 3s steps(40, end); /* Defines the typing animation */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Initially, the width of the text is set to 0 */
+  }
+  to {
+    width: 100%; /* At the end of the animation, the width expands to 100% */
+  }
+}
